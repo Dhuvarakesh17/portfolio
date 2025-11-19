@@ -26,7 +26,7 @@ export default function AboutPage() {
         <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
           
           {/* IMAGE */}
-          <div className="flex-shrink-0">
+          <div className="shrink-0">
             <Image
               src="/images/avatar.jpg"
               alt="Profile"

@@ -10,6 +10,7 @@ import {
   SiMysql,
   SiNodedotjs,
   SiFramer,
+  SiDocker,
 } from "react-icons/si";
 
 const skills = [
@@ -21,6 +22,7 @@ const skills = [
   { name: "Node.js", icon: SiNodedotjs },
   { name: "Python", icon: SiPython },
   { name: "MySQL", icon: SiMysql },
+  {name:"Docker",icon:SiDocker}
 ];
 
 export default function Skills() {
