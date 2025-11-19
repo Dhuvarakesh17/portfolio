@@ -36,5 +36,12 @@ export const projects = [
     image:"/projects/p4.png",
     github:"https://github.com/Dhuvarakesh17/saas-app",
     demo:"https://saas-app-one-ecru.vercel.app/"
+  },
+  {
+    id:5,
+    title:"AI-Driven Document Intelligence System",
+    description:"An AI-Driven Document Intelligence System that instantly summarizes large documents and delivers accurate answers to user queries.",
+    tags:["FastAPI","PineCone","Supabase","Ollama"],
+    github:"https://github.com/Dhuvarakesh17/AI-Driven-Document-Intelligence-System"
   }
 ];
