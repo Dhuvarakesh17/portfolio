@@ -18,6 +18,7 @@ import {
   SiGithub,
   SiFigma,
   SiFramer,
+  SiDocker,
 } from "react-icons/si";
 
 export default function SkillsPage() {
@@ -138,6 +139,11 @@ export default function SkillsPage() {
             name: "Framer Motion",
             icon: SiFramer,
             description: "Used to create animations, transitions, and modern UI effects.",
+          },
+          {
+            name: "Docker",
+            icon: SiDocker,
+            description: "Containerization platform for developing, shipping, and running applications.",
           },
         ]}
       />
