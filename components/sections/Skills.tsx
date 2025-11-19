@@ -19,7 +19,7 @@ const skills = [
   { name: "Tailwind CSS", icon: SiTailwindcss },
   { name: "Framer Motion", icon: SiFramer },
   { name: "Node.js", icon: SiNodedotjs },
-  { name: "Python", icon: SaferPython },
+  { name: "Python", icon: SiPython },
   { name: "MySQL", icon: SiMysql },
 ];
 

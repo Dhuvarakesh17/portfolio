@@ -12,7 +12,7 @@ export async function POST(req: Request) {
       from: "Portfolio Contact <onboarding@resend.dev>",
       to: process.env.CONTACT_SEND_TO!,
       subject: `New Message from ${name}`,
-      reply_to: email,
+      replyTo: email,
       html: `
         <div>
           <h2>New Portfolio Contact Message</h2>
