@@ -348,6 +348,40 @@ export default function Home() {
           ))}
         </motion.div>
       </section>
+{/* RESUME SECTION */}
+<section id="resume" className="py-28 max-w-3xl">
+
+  <motion.h2
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.4 }}
+    className="text-4xl md:text-5xl font-extrabold mb-10"
+  >
+    Resume
+  </motion.h2>
+
+  <motion.div
+    initial={{ opacity: 0, y: 25 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5 }}
+    viewport={{ once: true }}
+    className="bg-white/60 backdrop-blur-xl p-8 rounded-3xl shadow-xl border border-white/30 flex flex-col md:flex-row items-center justify-between gap-6"
+  >
+    <p className="text-lg text-black/80">
+      Download my updated resume to learn more about my experience and skills.
+    </p>
+
+    <a
+      href="/resume/Dhuvarakesh-Resume.pdf"
+      download
+      className="px-6 py-3 rounded-xl bg-black text-white font-medium hover:bg-black/85 transition"
+    >
+      Download Resume
+    </a>
+  </motion.div>
+
+</section>
 
       {/* CONTACT SECTION */}
       <section id="contact" className="py-28 max-w-3xl">
