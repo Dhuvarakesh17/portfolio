@@ -252,7 +252,7 @@ export default function Home() {
       href="/skills"
       className="px-6 py-3 rounded-xl bg-black text-white font-medium hover:bg-black/90 transition"
     >
-      View All Skills
+      See Full Skillset
     </Link>
   </div>
 
