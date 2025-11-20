@@ -44,5 +44,13 @@ export const projects = [
     tags:["FastAPI","PineCone","Supabase","Ollama"],
     image:"/projects/p5.png",
     github:"https://github.com/Dhuvarakesh17/AI-Driven-Document-Intelligence-System"
+  },
+  {
+    id:6,
+    title:"Mask Detection Using Yolo",
+    description:"A real-time mask detection system using YOLOv8 to identify individuals wearing masks in public spaces.",
+    tags:["YOLOv8","OpenCV","Python"],
+    image:"/projects/p6.png",
+    github:"https://github.com/Dhuvarakesh17/mask-detector"
   }
 ];
