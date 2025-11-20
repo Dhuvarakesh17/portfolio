@@ -39,7 +39,7 @@ export const projects = [
   },
   {
     id:5,
-    title:" ",
+    title:"AI-Driven Document Intelligence System",
     description:"An AI-Driven Document Intelligence System that instantly summarizes large documents and delivers accurate answers to user queries.",
     tags:["FastAPI","PineCone","Supabase","Ollama"],
     image:"/projects/p5.png",
