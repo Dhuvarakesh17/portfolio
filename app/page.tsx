@@ -63,6 +63,14 @@ export default function Home() {
     >
       Dhuvarakesh 
     </motion.h1>
+    <motion.h1
+      initial={{ opacity: 0, y: 25 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.45 }}
+      className="text-6xl md:text-4xl font-extrabold leading-tight text-black"
+    >
+      Student | Web Developer 
+    </motion.h1>
 
     <motion.p
       initial={{ opacity: 0, y: 25 }}
