@@ -37,7 +37,7 @@ export default function Navbar() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="text-base font-medium hover:text-blue-600 transition"
+                className="text-base font-medium hover:text-blue-600 hover:underline transition"
               >
                 {link.name}
               </Link>

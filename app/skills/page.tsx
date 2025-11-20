@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Brain, MessageSquare, Users,Target } from "lucide-react";
 import {
   SiReact,
   SiNextdotjs,
@@ -19,7 +20,12 @@ import {
   SiFigma,
   SiFramer,
   SiDocker,
+  SiTensorflow,
+  SiPytorch,
+  SiScikitlearn,
+  SiKeras,
 } from "react-icons/si";
+
 
 export default function SkillsPage() {
   return (
@@ -147,6 +153,56 @@ export default function SkillsPage() {
           },
         ]}
       />
+      <SkillCategory
+        title="AI & Machine Learning"
+        skills={[
+          {
+            name: "TensorFlow",
+            icon: SiTensorflow,
+            description: "Open-source platform for machine learning and AI.",
+          },
+          {
+            name: "PyTorch",
+            icon: SiPytorch,
+            description: "Deep learning framework for building AI models.",
+          },
+          {
+            name: "Scikit-learn",
+            icon: SiScikitlearn,
+            description: "Machine learning library for data mining and analysis.",
+          },
+          {
+            name: "Keras",
+            icon: SiKeras,
+            description: "High-level neural networks API for fast experimentation.",
+          },
+        ]}
+      />
+      <SkillCategory
+        title="Soft Skills"
+        skills={[
+          {
+            name: "Problem Solving",
+            icon: Brain,
+            description: "Ability to analyze issues and develop effective solutions.",
+          },
+          {
+            name:"Strong Communication",
+            icon: MessageSquare,
+            description: "Effective verbal and written communication skills.",
+          },
+          {
+            name:"Team Collaboration",
+            icon: Users,
+            description: "Experience working in diverse teams to achieve common goals.",
+          },
+          {
+            name:"Time Management", 
+            icon:Target,
+            description: "Efficiently managing time to meet deadlines and prioritize tasks.",
+          }
+        ]}
+        />
     </main>
   );
 }
@@ -198,7 +254,7 @@ function SkillCategory({
               transition={{ duration: 0.4 }}
               className="bg-white/60 backdrop-blur-lg border border-white/20 shadow-lg p-6 rounded-2xl flex gap-5 hover:shadow-xl transition"
             >
-              <Icon size={40} className="text-black/80 flex-shrink-0" />
+              <Icon size={40} className="text-black/80 shrink-0" />
               <div>
                 <h3 className="text-xl font-semibold">{skill.name}</h3>
                 <p className="text-black/70">{skill.description}</p>

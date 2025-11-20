@@ -24,32 +24,32 @@ export default function Footer() {
 
           <ul className="space-y-2 text-black/80">
             <li>
-              <Link href="/" className="hover:text-black transition">
+              <Link href="/" className="hover:text-blue-500 hover:underline  transition">
                 Home
               </Link>
             </li>
             <li>
-              <Link href="/about" className="hover:text-black transition">
+              <Link href="/about" className="hover:text-blue-500 hover:underline transition">
                 About
               </Link>
             </li>
             <li>
-              <Link href="/skills" className="hover:text-black transition">
+              <Link href="/skills" className="hover:text-blue-500 hover:underline transition">
                 Skills
               </Link>
             </li>
             <li>
-              <Link href="/projects" className="hover:text-black transition">
+              <Link href="/projects" className="hover:text-blue-500 hover:underline transition">
                 Projects
               </Link>
             </li>
             <li>
-              <Link href="/certificates" className="hover:text-black transition">
+              <Link href="/certificates" className="hover:text-blue-500 hover:underline transition">
                 Certificates
               </Link>
             </li>
             <li>
-              <Link href="/#contact" className="hover:text-black transition">
+              <Link href="/#contact" className="hover:text-blue-500 hover:underline transition">
                 Contact
               </Link>
             </li>
@@ -63,7 +63,7 @@ export default function Footer() {
           <div className="flex flex-col space-y-3 text-black/80">
             <a
               href="mailto:dhuvarakeshs92@gmail.com"
-              className="flex items-center gap-3 hover:text-black transition"
+              className="flex items-center gap-3 hover:text-blue-500 hover:underline transition"
             >
               <Mail className="w-5 h-5" /> dhuvarakeshs92@gmail.com
             </a>
@@ -71,7 +71,7 @@ export default function Footer() {
             <a
               href="https://github.com/Dhuvarakesh17"
               target="_blank"
-              className="flex items-center gap-3 hover:text-black transition"
+              className="flex items-center gap-3 hover:text-blue-500 hover:underline transition"
             >
               <Github className="w-5 h-5" /> GitHub
             </a>
@@ -79,7 +79,7 @@ export default function Footer() {
             <a
               href="https://linkedin.com/in/dhuvarakesh-s-5195b1291"
               target="_blank"
-              className="flex items-center gap-3 hover:text-black transition"
+              className="flex items-center gap-3 hover:text-blue-500 hover:underline transition"
             >
               <Linkedin className="w-5 h-5" /> LinkedIn
             </a>

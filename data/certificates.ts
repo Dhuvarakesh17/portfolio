@@ -39,5 +39,13 @@ export const certificates = [
     year:"2024",
     image:"/certificates/c5.png",
     url:"https://drive.google.com/file/d/1X8DK7kP6tpWx7IAQUBUbkRcaqcJwOG2d/view?usp=sharing"
+  },
+  {
+    id:6,
+    title:"Pandas",
+    issuer:"Kaggle",
+    year:"2024",
+    image:"/certificates/c6.png",
+    url:"https://drive.google.com/file/d/1-NtAATRUnwVxSXackyNrXbER2qLl9e9n/view?usp=sharing"
   }
 ];
