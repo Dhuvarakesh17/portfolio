@@ -3,12 +3,12 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { Cpu , FolderGit2,Award,UserRound,Mail,FileDown} from "lucide-react";
+import { FileDown} from "lucide-react";
 // Data imports
 import { projects } from "@/data/projects";
 import { certificates } from "@/data/certificates";
 import SectionTitle from "@/components/sections/SectionTitle";
-import { Download } from "lucide-react";
+
 // Icons
 import {
   SiReact,
@@ -153,7 +153,7 @@ export default function Home() {
 
     {/* Short Intro */}
     <p className="text-lg leading-relaxed text-black/80 text-center">
-      I'm <span className="font-semibold">Dhuvarakesh</span>, a Web Developer &
+      I&apos;m <span className="font-semibold">Dhuvarakesh</span>, a Web Developer &
       AI Enthusiast from Chennai. I build clean, modern, and intelligent digital 
       experiences using cutting-edge web and AI technologies.
     </p>

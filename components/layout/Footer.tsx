@@ -12,7 +12,7 @@ export default function Footer() {
         {/* BRAND + DESCRIPTION */}
         <div>
           <h3 className="text-2xl font-bold text-black mb-3">Dhuvarakesh</h3>
-          <p classname="text-black/70 leading-relaxed">
+          <p className="text-black/70 leading-relaxed">
             A passionate Web Developer & AI Enthusiast building clean, modern
             and user-friendly digital experiences.
           </p>
