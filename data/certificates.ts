@@ -31,5 +31,13 @@ export const certificates = [
     year:"2025",
     image:"/certificates/c4.png",
     url:"https://www.credly.com/badges/873ef1fb-2a12-4a5c-afcc-c0fcebfb19df/public_url"
+  },
+  {
+    id:5,
+    title:"Intro to Machine Learning",
+    issuer:"Kaggle",
+    year:"2024",
+    image:"/certificates/c5.png",
+    url:"https://drive.google.com/file/d/1X8DK7kP6tpWx7IAQUBUbkRcaqcJwOG2d/view?usp=sharing"
   }
 ];
