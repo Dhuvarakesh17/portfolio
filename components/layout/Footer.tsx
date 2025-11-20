@@ -1,60 +1,96 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="mt-20 pb-10">
-      <motion.div
-        initial={{ opacity: 0, y: 15 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.4 }}
-        className="container bg-white/60 backdrop-blur-xl border border-white/20 rounded-3xl p-8 shadow-xl"
-      >
-        {/* Top Section */}
-        <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-6">
-          
-          {/* Brand / Name */}
-          <h2 className="text-2xl font-bold text-black">
-            Dhuvarakesh
-          </h2>
+    <footer className="mt-32 py-12 bg-white/40 backdrop-blur-xl border-t border-white/20">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
 
-          {/* Social Icons */}
-          <div className="flex gap-6 text-black/80 text-2xl">
-            <Link 
-              href="https://github.com/Dhuvarakesh17" 
-              target="_blank"
-              className="hover:text-black transition"
-            >
-              <FaGithub />
-            </Link>
-            <Link 
-              href="https://linkedin.com/in/dhuvarakesh-s-5195b1291" 
-              target="_blank"
-              className="hover:text-black transition"
-            >
-              <FaLinkedin />
-            </Link>
-            <Link 
-              href="mailto:dhuvarakesh@gmail.com"
-              className="hover:text-black transition"
-            >
-              <FaEnvelope />
-            </Link>
-          </div>
+        {/* BRAND + DESCRIPTION */}
+        <div>
+          <h3 className="text-2xl font-bold text-black mb-3">Dhuvarakesh</h3>
+          <p classname="text-black/70 leading-relaxed">
+            A passionate Web Developer & AI Enthusiast building clean, modern
+            and user-friendly digital experiences.
+          </p>
         </div>
 
-        {/* Divider */}
-        <div className="mt-8 border-t border-black/20"></div>
+        {/* QUICK LINKS */}
+        <div>
+          <h4 className="text-xl font-semibold text-black mb-3">Quick Links</h4>
 
-        {/* Copyright */}
-        <p className="text-center text-black/70 text-sm mt-6">
-          © {new Date().getFullYear()} Dhuvarakesh. All rights reserved.
-        </p>
-      </motion.div>
+          <ul className="space-y-2 text-black/80">
+            <li>
+              <Link href="/" className="hover:text-black transition">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link href="/about" className="hover:text-black transition">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link href="/skills" className="hover:text-black transition">
+                Skills
+              </Link>
+            </li>
+            <li>
+              <Link href="/projects" className="hover:text-black transition">
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link href="/certificates" className="hover:text-black transition">
+                Certificates
+              </Link>
+            </li>
+            <li>
+              <Link href="/#contact" className="hover:text-black transition">
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        {/* SOCIAL LINKS */}
+        <div>
+          <h4 className="text-xl font-semibold text-black mb-3">Connect</h4>
+
+          <div className="flex flex-col space-y-3 text-black/80">
+            <a
+              href="mailto:dhuvarakeshs92@gmail.com"
+              className="flex items-center gap-3 hover:text-black transition"
+            >
+              <Mail className="w-5 h-5" /> dhuvarakeshs92@gmail.com
+            </a>
+
+            <a
+              href="https://github.com/Dhuvarakesh17"
+              target="_blank"
+              className="flex items-center gap-3 hover:text-black transition"
+            >
+              <Github className="w-5 h-5" /> GitHub
+            </a>
+
+            <a
+              href="https://linkedin.com/in/dhuvarakesh-s-5195b1291"
+              target="_blank"
+              className="flex items-center gap-3 hover:text-black transition"
+            >
+              <Linkedin className="w-5 h-5" /> LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* BOTTOM LINE */}
+      <div className="text-center mt-10 text-black/60 text-sm">
+        © {new Date().getFullYear()} Dhuvarakesh S. All rights reserved.
+      </div>
     </footer>
   );
 }

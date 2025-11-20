@@ -3,76 +3,205 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+
+
+
 export default function AboutPage() {
   return (
-    <main className="container py-36">
-      {/* PAGE TITLE */}
+    <main className="container pt-40 pb-32 space-y-20">
+
+      {/* Page Heading */}
+      
       <motion.h1
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
-        className="text-4xl md:text-5xl font-extrabold mb-10"
+        className="text-5xl md:text-6xl font-extrabold mb-10 text-black"
       >
         About Me
       </motion.h1>
 
-      {/* ABOUT CARD */}
-      <motion.div
-        initial={{ opacity: 0, y: 25 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="bg-white/50 backdrop-blur-xl p-8 md:p-12 rounded-3xl shadow-xl border border-white/30"
-      >
-        <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
-          
-          {/* IMAGE */}
-          <div className="shrink-0">
-            <Image
+      {/* BIO SECTION */}
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        
+        {/* LEFT – Image */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          className="w-full flex justify-center"
+        >
+          <div className="w-64 h-64 md:w-80 md:h-80 rounded-3xl overflow-hidden shadow-2xl border border-black/10">
+            <img
               src="/images/avatar.jpg"
               alt="Profile"
-              width={180}
-              height={180}
-              className="rounded-2xl shadow-lg object-cover"
+              className="w-full h-full object-cover"
             />
           </div>
+        </motion.div>
 
-          {/* TEXT CONTENT */}
-          <div className="space-y-4 max-w-2xl">
-            <h2 className="text-2xl font-bold">Who I Am</h2>
-            <p className="text-lg leading-relaxed text-black/80">
-              I’m <span className="font-semibold">Dhuvarakesh</span>, a web 
-              developer and AI enthusiast based in Chennai. I enjoy creating 
-              clean, modern, and intuitive digital experiences using 
-              cutting-edge technologies.
-            </p>
+        {/* RIGHT – Text */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="space-y-6 text-black/80 text-lg"
+        >
+          <p>
+            I’m <span className="font-semibold text-black">Dhuvarakesh</span>,
+            a Web Developer & AI Enthusiast based in Chennai. I enjoy building
+            clean, modern, meaningful digital products that solve real problems.
+          </p>
 
-            <p className="text-lg leading-relaxed text-black/80">
-              I’m passionate about  
-              <span className="font-semibold"> frontend development</span>, 
-              <span className="font-semibold"> AI-driven applications</span>, 
-              and building products that solve real-world problems.  
-            </p>
+          <p>
+            My core focus is blending{" "}
+            <span className="font-semibold">Frontend Development</span> and{" "}
+            <span className="font-semibold">AI-based tools</span> to create
+            applications that are both visually appealing and intelligent.
+          </p>
 
-            <p className="text-lg leading-relaxed text-black/80">
-              Outside coding, I love exploring new tech, improving developer 
-              workflows, and working on meaningful side-projects.
-            </p>
+          <p>
+            I constantly explore new technologies and enjoy working on projects
+            that challenge me to learn and innovate.
+          </p>
+        </motion.div>
+      </section>
 
-            {/* HIGHLIGHTS */}
-            <div className="grid grid-cols-2 gap-4 pt-6">
-              <div className="bg-white/70 backdrop-blur-xl p-4 rounded-2xl shadow-md border border-white/20">
-                <h3 className="text-xl font-semibold">2+ Years</h3>
-                <p className="text-black/70">Development Experience</p>
-              </div>
 
-              <div className="bg-white/70 backdrop-blur-xl p-4 rounded-2xl shadow-md border border-white/20">
-                <h3 className="text-xl font-semibold">3+ Projects</h3>
-                <p className="text-black/70">Completed</p>
-              </div>
-            </div>
-          </div>
+      {/* EDUCATION + EXPERIENCE TIMELINE */}
+      <section>
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+          viewport={{ once: true }}
+          className="text-4xl font-extrabold mb-10"
+        >
+          Journey So Far
+        </motion.h2>
+
+        <div className="space-y-8">
+          {/* ITEM */}
+          {[
+            {
+              year: "2023 – Present",
+              title: "B.Tech Student (3rd Year)",
+              desc: "Studying at Rajalakshmi Institute of Technology, focusing on Web Development, Data Analytics, and AI projects.",
+            },
+            {
+              year: "2025",
+              title: "Intern – Aardhra (Zoho Implementation Team)",
+              desc: "Gained hands-on experience in Zoho People, Zoho Sites, and SalesIQ. Learned real-world project workflows and client handling.",
+            },
+            {
+              year: "2025",
+              title: "AI & Web Projects",
+              desc: "Developed multiple AI-based tools, dashboards, and applications using React, Next.js, Python, ML libraries, and APIs.",
+            },
+          ].map((item, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.4 }}
+              viewport={{ once: true }}
+              className="bg-white/60 backdrop-blur-lg border border-white/20 p-6 rounded-2xl shadow-lg"
+            >
+              <p className="text-blue-700 font-semibold">{item.year}</p>
+              <h3 className="text-xl font-bold text-black">{item.title}</h3>
+              <p className="text-black/70 mt-2">{item.desc}</p>
+            </motion.div>
+          ))}
         </div>
-      </motion.div>
+      </section>
+
+
+      {/* CURRENTLY LEARNING */}
+      <section>
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+          viewport={{ once: true }}
+          className="text-4xl font-extrabold mb-10"
+        >
+          Currently Learning
+        </motion.h2>
+
+        <div className="flex flex-wrap gap-4">
+          {["Advanced React", "Next.js App Router", "AI Agents", "LangChain", "Machine Learning", "Backend APIs"].map(
+            (skill, index) => (
+              <motion.span
+                key={index}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3 }}
+                viewport={{ once: true }}
+                className="px-5 py-2 bg-black/10 rounded-xl text-black font-medium"
+              >
+                {skill}
+              </motion.span>
+            )
+          )}
+        </div>
+      </section>
+
+
+      {/* INTERESTS */}
+      <section>
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+          viewport={{ once: true }}
+          className="text-4xl font-extrabold mb-10"
+        >
+          Interests
+        </motion.h2>
+
+        <ul className="list-disc pl-6 text-lg text-black/80 space-y-2">
+          <li>Artificial Intelligence & Automation</li>
+          <li>Web Development & UI/UX Design</li>
+          <li>Building Creative Side Projects</li>
+          <li>Exploring New Technologies</li>
+          <li>Data Science & Visualization</li>
+        </ul>
+      </section>
+
+
+      {/* FUN FACTS */}
+      <section>
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+          viewport={{ once: true }}
+          className="text-4xl font-extrabold mb-10"
+        >
+          Fun Facts
+        </motion.h2>
+
+        <div className="grid md:grid-cols-3 gap-6">
+          {[
+            "I love solving real-world problems with code.",
+            "I enjoy designing clean and modern UIs.",
+            "I build AI mini-projects for fun.",
+          ].map((fact, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3 }}
+              viewport={{ once: true }}
+              className="p-6 bg-white/60 backdrop-blur-xl rounded-2xl shadow border border-white/20"
+            >
+              {fact}
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+
     </main>
   );
 }
