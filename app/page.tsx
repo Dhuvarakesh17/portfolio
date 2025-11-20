@@ -737,7 +737,7 @@ export default function Home() {
 
         <div>
           <p className="font-semibold text-black text-lg">Phone</p>
-          <p className="text-black/70">+91 96296 12052</p>
+          <p className="text-black/70">+91 63818 97590</p>
         </div>
       </div>
 
