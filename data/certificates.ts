@@ -47,5 +47,12 @@ export const certificates = [
     year:"2024",
     image:"/certificates/c6.png",
     url:"https://drive.google.com/file/d/1-NtAATRUnwVxSXackyNrXbER2qLl9e9n/view?usp=sharing"
+  },{
+    id:7,
+    title:" Research Methods in Health Promotion",
+    issuer:"NPTEL",
+    year:"2025",
+    image:"/certificates/c7.png", 
+    url:"https://drive.google.com/file/d/1TZc4E1pMP_H4p6lU1uRfet8GURdyIPrx/view?usp=drivesdk"
   }
 ];
