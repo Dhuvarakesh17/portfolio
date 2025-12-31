@@ -89,7 +89,7 @@ export default function Footer() {
 
       {/* BOTTOM LINE */}
       <div className="text-center mt-10 text-black/60 text-sm">
-        © {new Date().getFullYear()} Dhuvarakesh S. All rights reserved.
+        © {new Date().getFullYear()} Made With ❤️ Dhuvarakesh S. All rights reserved.
       </div>
     </footer>
   );
